@@ -5,34 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slider-style.css">
+    <link rel="stylesheet" href="css/scroll-style.css">
+    <link rel="stylesheet" href="css/calculator-style.css">
 </head>
 <body>
     
 
-<div class="block" id="list-container" > 
+<div class="block"  > 
 <div class=" burger burger-icon  "></div>
-
+<div id="list-container"> </div>
 </div>
 
 <div class="container">
-    <div class="content">
-        <div>
-            <h2>Accordion Head</h2>
-            <p>1  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint suscipit saepe voluptatibus quas adipisci? Ex!</p>
+
+    <div class="section" id="calc"> 
+        <div class="calculator-container">
+            <div class="calculator-content">
+                <div class="calc-input-block"> 
+                    <a id="clear-btn">Clear</a>
+                    <p class="input-main">  </p>
+                    <p class="input-result">  </p>
+                </div>
+                <div class="numerals">
+                    <span id="num7">7</span>
+                    <span>8</span>
+                    <span>9</span> 
+                    <span>4</span>
+                    <span>5</span>
+                    <span>6</span>
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span> 
+                    <span>0</span>
+                    <span>,</span>
+                </div>
+                <div class="operations">
+                    <span> - </span>
+                    <span id="sum"> + </span>
+                    <span> * </span>
+                    <span> / </span>
+                    <span id="equal"> = </span>
+                </div>
+            </div>
         </div>
-        <div>
-            <h2>Accordion Head</h2>
-            <p>2  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint suscipit saepe voluptatibus quas adipisci? Ex!</p>
+    </div>
+
+<div class="section">
+    <div class=" block-scroll scroll-container">
+        <div class="scroll-content">
+            <p>1 - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium perferendis tempora suscipit minima quasi molestiae nemo ipsum hic delectus nisi?</p>
+            <p>2 - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium perferendis tempora suscipit minima quasi molestiae nemo ipsum hic delectus nisi?</p>
+            <p>3 - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium perferendis tempora suscipit minima quasi molestiae nemo ipsum hic delectus nisi?</p>
+            <p>4 - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium perferendis tempora suscipit minima quasi molestiae nemo ipsum hic delectus nisi?</p>
+            <p>5 - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium perferendis tempora suscipit minima quasi molestiae nemo ipsum hic delectus nisi?</p>        
+            <p>6 - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium perferendis tempora suscipit minima quasi molestiae nemo ipsum hic delectus nisi?</p>        
+            <p>7 - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium perferendis tempora suscipit minima quasi molestiae nemo ipsum hic delectus nisi?</p>
+            <p>8 - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium perferendis tempora suscipit minima quasi molestiae nemo ipsum hic delectus nisi?</p>
+            <p>9 - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium perferendis tempora suscipit minima quasi molestiae nemo ipsum hic delectus nisi?</p>
+            <p>10 - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium perferendis tempora suscipit minima quasi molestiae nemo ipsum hic delectus nisi?</p>
+            <p>11 - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium perferendis tempora suscipit minima quasi molestiae nemo ipsum hic delectus nisi?</p>        
+            <p>12 - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium perferendis tempora suscipit minima quasi molestiae nemo ipsum hic delectus nisi?</p>        
         </div>
-        <div>
-            <h2>Accordion Head</h2>
-            <p>3  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint suscipit saepe voluptatibus quas adipisci? Ex!</p>
-        </div>
+        <div class="scroll-bar">
+            <div class="scroll-marker"></div>
+        </div>     
     </div>
 </div>
     
 
+    <div id="slider-id">   </div>
+
+    <div class="content accordion section">
+        <div>
+            <h2>Accordion Head 1 </h2>
+            <p>1  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint suscipit saepe voluptatibus quas adipisci? Ex!</p>
+        </div>
+        <div>
+            <h2>Accordion Head 2 </h2>
+            <p>2  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint suscipit saepe voluptatibus quas adipisci? Ex!</p>
+        </div>
+        <div>
+            <h2>Accordion Head 3 </h2>
+            <p>3  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint suscipit saepe voluptatibus quas adipisci? Ex!</p>
+        </div>
+        <div>
+            <h2>Accordion Head 4 </h2>
+            <p>4  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint suscipit saepe voluptatibus quas adipisci? Ex!</p>
+        </div>
+        <div>
+            <h2>Accordion Head 5 </h2>
+            <p>5  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint suscipit saepe voluptatibus quas adipisci? Ex!</p>
+        </div>
+    </div>
+    
+</div>
+    
+
+<script src="scroll.js"></script> 
+<script src="calculator.js"></script> 
+<script src="slider.js"></script> 
 <script src="script.js"></script>
 
 </body>
