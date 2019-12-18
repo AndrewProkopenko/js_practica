@@ -117,58 +117,58 @@ function closeMenu() {
 
 let menuAside = [
     {
-        text: 'Home',
+        text: 'first',
         url: '1#'
     }, 
     {
-        text: 'Main',
+        text: 'second',
         url: '2#',
         
     }, 
     {
-        text: 'General',
+        text: 'third',
         url: '3#'
     }, 
     {
-        text: 'Unusual',
+        text: 'fourth',
         url: '4#',
         submenu: [
             { 
-                text: 'Unusual_First',
+                text: 'fourth 1',
                 url: '4.1#',
             },
             { 
-                text: 'Unusual_Second',
+                text: 'fourth 2 ',
                 url: '4.2#',
             },
             { 
-                text: 'Unusual_Third',
+                text: 'fourth 3 ',
                 url: '4.3#',
             }
             
         ]
     }, 
     {
-        text: 'Magic',
+        text: 'fifth',
         url: '#5'
     }, 
     {
-        text: 'Limpopo',
+        text: 'sixth',
         url: '#6'
     } 
 ]
 
 let listContainer = document.getElementById('list-container');
 
-
 let list = document.createElement("ul");
 list.classList.add('list');
-listContainer.appendChild(list);
-
+listContainer.appendChild(list); // как в этом месте сделать так чтобы аппендилось в текущий элемент , а не в листконтейнер
 
     function render(array) { 
+                
         
-        array.forEach( function(item, i) { 
+        array.forEach( function(item, i) {  
+
             let li = document.createElement('li');
             let link = document.createElement('a');
             
@@ -177,11 +177,11 @@ listContainer.appendChild(list);
             link.innerText = array[i].text;
             link.href = array[i].url;
             if (array[i].submenu) { 
-                // console.log(1);
-                // let ul = document.createElement('ul');
-                // ul.classList.add('list'); 
-                // li.appendChild(ul);
-                render(array[i].submenu)
+                let list = document.createElement("ul");
+                list.classList.add('list');
+                li.appendChild(list);
+
+                render(array[i].submenu);
             }
         })
         

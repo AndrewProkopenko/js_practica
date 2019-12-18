@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/slider-style.css">
     <link rel="stylesheet" href="css/scroll-style.css">
     <link rel="stylesheet" href="css/calculator-style.css">
+    <link rel="stylesheet" href="css/clock-style.css">
 </head>
 <body>
     
@@ -22,32 +23,48 @@
 
 <div class="container">
 
+    <div class="section">
+        <div class="block-clock">
+            <div class="face"></div>
+            <div class="hour"></div>
+            <div class="minute"></div>
+            <div class="second"></div>
+            <div class="center"></div>
+            <div class="week-face"></div>
+            <div class="data-face">
+                <div class="day-face"></div>
+                <div class="month-face">dec</div>
+            </div>
+            <div class="logo-clock"> <img src="image-clock/rolex.png"></div>
+        </div>
+    </div>
+
     <div class="section" id="calc"> 
         <div class="calculator-container">
             <div class="calculator-content">
                 <div class="calc-input-block"> 
                     <a id="clear-btn">Clear</a>
-                    <p class="input-main">  </p>
+                    <p class="input-main">  </p> <b id="label-calc">go to calc</b>
                     <p class="input-result">  </p>
                 </div>
                 <div class="numerals">
-                    <span id="num7">7</span>
-                    <span>8</span>
-                    <span>9</span> 
-                    <span>4</span>
-                    <span>5</span>
-                    <span>6</span>
-                    <span>1</span>
-                    <span>2</span>
-                    <span>3</span> 
-                    <span>0</span>
-                    <span>,</span>
+                    <span class="numbers">7</span class="numbers">
+                    <span class="numbers">8</span>
+                    <span class="numbers">9</span> 
+                    <span class="numbers">4</span>
+                    <span class="numbers">5</span>
+                    <span class="numbers">6</span>
+                    <span class="numbers">1</span>
+                    <span class="numbers">2</span>
+                    <span class="numbers">3</span> 
+                    <span class="numbers">0</span>
+                    <span class="no-numbers zapyataya">,</span>
                 </div>
                 <div class="operations">
-                    <span> - </span>
-                    <span id="sum"> + </span>
-                    <span> * </span>
-                    <span> / </span>
+                    <span id="minus"> - </span>
+                    <span id="plus"> + </span>
+                    <span id="times"> * </span>
+                    <span id="divided"> / </span>
                     <span id="equal"> = </span>
                 </div>
             </div>
@@ -105,6 +122,7 @@
 </div>
     
 
+<script src="clock.js"></script> 
 <script src="scroll.js"></script> 
 <script src="calculator.js"></script> 
 <script src="slider.js"></script> 

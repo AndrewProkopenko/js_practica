@@ -1,0 +1,75 @@
+.block-clock { 
+     width: 300px;
+     height: 300px;
+     margin: 0 auto; 
+     position: relative;
+}
+.face, .hour, .minute, .second, .center { 
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 2;
+}
+.face { 
+    background-image: url(../image-clock/face.png);
+    z-index: 0;
+}
+.hour { 
+    background-image: url(../image-clock/h.png);
+}
+.minute { 
+    background-image: url(../image-clock/m.png);
+}
+.second { 
+    background-image: url(../image-clock/s.png);
+}
+.center { 
+    background-image: url(../image-clock/p.png);
+}
+.week-face { 
+    position: absolute;
+    top: 50%;
+    left: 20%;
+}
+
+.week-face, .day-face, .month-face{ 
+    font-weight: 600;
+    min-height: 25px;
+    background: #dbdbdb;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1rem;
+    line-height: 1rem;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    color: #fff;
+    margin: 1px;
+}
+.data-face { 
+    width: 50px;
+    height: 25px;
+    position: absolute;
+    top: 50%;
+    right: 25%;
+    display: flex;
+}
+.saturday { 
+    background: rgb(245, 209, 94)
+}
+.sunday { 
+    background: rgb(240, 97, 92)
+}
+.logo-clock { 
+    position: absolute;
+    width: 70px;
+    z-index: 1;
+    left: calc(50% - 35px);
+    bottom: 20%;
+}
+.logo-clock img { 
+    width: 100%;
+}
